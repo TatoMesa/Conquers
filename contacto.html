@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactate con nosotros</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Dejanos tus inquitudes">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header>
+    <figure>
+      <img src="img/Common/logotipo.avif" alt="Logotipo de Conquer Blocks">
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>Contacto</li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Contactate con nosotros</h1>
+    <p>Has las consultas que creas necesarias</p>
+
+    <section>
+      <form action="procesar_contacto.php" method="post">
+    
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+        </p>
+
+  </form>
+    </section>
+
+
+  </main>
+   
+  <footer>
+    <p>Conquers Blocks <a href="legales.html">Avisos Legales</a></p>
+  </footer>
+   
+</body>
+
+</html>

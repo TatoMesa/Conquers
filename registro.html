@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Registrate para formar parte de nuestros cursos">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <header>
+    <figure>
+      <img src="img/Common/logotipo.avif" alt="Logotipo de Conquer Blocks">
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>Registro</li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Formulario de Registro</h1>
+
+    <form action="procesar_registro.php" method="post" enctype="multipart/form-data">
+    
+      <p>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </p>
+      
+      <p>
+        <label for="fecha_nac">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nac" name="fecha_nac" required>
+      </p>
+      
+      <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      
+      <p>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+      </p>
+
+      <p>
+        <label for="web">Página web:</label>
+        <input type="url" id="web" name="web" placeholder="https://">
+      </p>
+      
+      <p>
+        <label for="foto">Fotografía:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+      </p>
+      
+      <p>
+        <label for="bio">Biografía:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Escribe aquí tu biografía..."></textarea>
+      </p>
+      
+      <button type="submit">Registrarse</button>
+      <button type="reset">Borrar</button>
+    </form>
+
+  </main>
+   
+  <footer>
+    <p>Conquers Blocks <a href="legales.html">Avisos Legales</a></p>
+  </footer>
+   
+</body>
+
+</html>
