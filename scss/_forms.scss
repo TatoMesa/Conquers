@@ -1,0 +1,62 @@
+@use 'variables';
+section.form{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    form{
+        border: 2px solid variables.$color-black;
+        border-radius: 10px;
+        padding: 2%;
+    }
+    
+    
+    h2{
+        text-decoration: none;
+        padding: 25px;
+    }
+    input,
+    textarea {
+        background: none;
+        border: none;
+        border-bottom: 1px solid variables.$color-white;
+        color: variables.$color-white;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+        &:required:invalid {
+            border-bottom-color: variables.$color-red;
+        }
+        &:valid {
+            border-bottom-color: variables.$color-green;
+        }
+    }
+    button{
+        font-family: variables.$font-name;
+        width: 150px;
+        height: 35px;
+        padding: 4px;
+        border-radius: 10px;
+        &.submit{
+            background-color: variables.$color-green;
+            &:hover{
+                background-color: variables.$color-grey;
+                color: variables.$color-green;
+            }
+        }
+        &.reset{
+            background-color: variables.$color-red;
+            &:hover{
+                background-color: variables.$color-grey;
+                color: variables.$color-red;
+            }
+        }
+        
+    }
+    div.botones{
+        width: 100%;
+        text-align: center;
+    }
+}

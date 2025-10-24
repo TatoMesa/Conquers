@@ -1,0 +1,22 @@
+@use 'variables';
+
+html, body{
+  color: variables.$color-white;
+  background-color: variables.$color-dark-grey;
+  font-family: variables.$font-name;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; // ocupa todo el espacio libre entre header y footer
+}
+  

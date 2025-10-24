@@ -1,0 +1,88 @@
+@use 'variables';
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    figure{
+        margin: 0;
+    } 
+    figcaption{
+        display: none;
+    }
+
+    .hamburger {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: variables.$color-white;
+        cursor: pointer;
+        display: none; 
+        z-index: 10;
+    }
+      
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 50%;
+        justify-content: flex-end;
+        
+        ul li a{
+            text-decoration: none;
+            color: variables.$color-grey;
+            position: relative;
+            &:hover::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;        
+                left: 0;
+                width: 50%;       
+                height: 3px;      
+                background: variables.$color-red;
+            }   
+
+            &:hover{
+                color: variables.$color-red;
+            }   
+        }
+        
+        ul{
+            display: flex;
+            gap:40px;
+            list-style: none;
+        }
+
+        
+        @media (max-width: 1024px){
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 40%;
+            background: variables.$color-black;
+            justify-content: center;
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+                display: none;
+                padding: 1.5rem 0;
+                
+            }
+
+            ul.active {
+                display: flex;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+    .hamburger {
+      display: block;
+    }
+  }
+    
+}

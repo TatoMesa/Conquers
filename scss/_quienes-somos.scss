@@ -1,0 +1,48 @@
+@use 'variables';
+
+section.quienes-somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+
+    @media (max-width: 1024px){
+        grid-template-columns: 1fr;
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        border: 2px solid variables.$color-black;
+        border-radius: 10px;
+        background-color: variables.$color-grey;
+        h3{
+            color: variables.$color-black;
+            margin-bottom: 25px;
+        }
+       
+        img{
+            width: 320px;
+            border-radius: 50%;
+            
+        }
+        figcaption{
+            text-align: center;
+            color: variables.$color-black;
+            background-color: variables.$color-dark-grey;
+            padding: 5px;
+            font-size: 1.3rem;
+            text-shadow: 0px 0px 20px variables.$color-grey;
+            margin-bottom: 15px;
+        }
+        p{
+            color: variables.$color-black;
+            width: 100%;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+
+}

@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Iniciar sesion</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <meta name="description" content="Inicia sesion para acceder al contenido de nustros cursos">
 
   <meta property="og:title" content="">
@@ -28,7 +28,10 @@
     <figure>
       <img src="img/Common/logotipo.avif" alt="Logotipo de Conquer Blocks">
     </figure>
-    <nav>
+    <button class="hamburger" id="hamburger" aria-label="Menú principal">
+      ☰
+    </button>
+    <nav id="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="quienes-somos.html">Quienes Somos</a></li>
@@ -44,30 +47,34 @@
 
   <main>
      
-    <h1>Iniciar Sesión</h1>
+    
 
-    <form action="procesar_login.php" method="post">
-    
-      <p>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-      </p>
-    
-      <p>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
-      </p>
-      
-      <button type="submit">Iniciar sesión</button>
-      <button type="reset">Borrar</button>
-    </form>
+    <section class="form">
+      <h2>Iniciar Sesión</h2>
+      <form action="procesar_login.php" method="post">
+        <p>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+        </p>
+        <div class="botones">
+          <button class="submit" type="submit">Iniciar sesión</button>
+          <button class="reset" type="reset">Borrar</button>
+        </div>
+      </form>
+    </section>
   
   </main>
    
   <footer>
     <p>Conquers Blocks <a href="legales.html">Avisos Legales</a></p>
   </footer>
-   
+  
+  <script src="js/menu.js"></script>
+  
 </body>
 
 </html>

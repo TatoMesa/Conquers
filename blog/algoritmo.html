@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Algoritmo</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -28,7 +28,10 @@
     <figure>
       <img src="../img/Common/logotipo.avif" alt="Logotipo de Conquer Blocks">
     </figure>
-    <nav>
+    <button class="hamburger" id="hamburger" aria-label="Menú principal">
+      ☰
+    </button>
+    <nav id="nav">
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../quienes-somos.html">Quienes Somos</a></li>
@@ -43,8 +46,8 @@
   </header>
 
   <main>
-    <section>
-      <h1>¿Qué es un Algoritmo?</h1>
+    <section class="nota">
+      <h2>¿Qué es un Algoritmo?</h2>
       <p>Un *algoritmo* es un conjunto de instrucciones ordenadas y definidas para resolver un problema o realizar una tarea. Es como una receta de cocina: tienes ingredientes (datos de entrada), sigues una serie de pasos (proceso) y obtienes un resultado (salida).</p>
       <p>Por ejemplo, si quieres hacer un sándwich, podrías seguir estos pasos:</p>
       <ol>
@@ -55,13 +58,14 @@
       </ol>
       <p>Eso es un algoritmo: una serie de pasos estructurados para obtener un resultado concreto. En la programación, la lógica y el orden de los pasos son fundamentales para obtener la respuesta correcta.</p>
       
-      <h2>Algoritmos en la Vida Diaria</h2>
+      <h3>Algoritmos en la Vida Diaria</h3>
       <p>Aunque no nos demos cuenta, utilizamos algoritmos todo el tiempo: </p>
-      <p>- **Google**: Cuando buscas algo, un algoritmo ordena millones de resultados para mostrarte los más relevantes.</p>
-      <p>- **Netflix**: Un algoritmo analiza tu historial de visualización y te sugiere series o películas que podrían gustarte.</p>
-      <p>- **GPS**: Los sistemas de navegación analizan diferentes caminos y eligen la mejor ruta en función de factores como el tráfico y la distancia.</p>
-      
-      <h2>Conclusión</h2>
+      <ul>
+        <li><span>Google:</span> Cuando buscas algo, un algoritmo ordena millones de resultados para mostrarte los más relevantes.</li>
+        <li><span>Netflix:</span> Un algoritmo analiza tu historial de visualización y te sugiere series o películas que podrían gustarte.</li>
+        <li><span>GPS:</span> Los sistemas de navegación analizan diferentes caminos y eligen la mejor ruta en función de factores como el tráfico y la distancia.</li>
+      </ul>
+      <h3>Conclusión</h3>
       <p>En resumen, un algoritmo es un conjunto de pasos lógicos para resolver un problema o realizar una tarea. Están en todas partes, desde los motores de búsqueda hasta las aplicaciones móviles. Si te interesa la programación, aprender a diseñar buenos algoritmos es clave para convertirte en un gran desarrollador.En Conquer Blocks somos apasionados de la tecnología y queremos ayudarte a entenderla mejor. ¡Síguenos y continúa explorando el fascinante mundo de la programación!</p>
     </section>
       
@@ -71,6 +75,8 @@
     <p>Conquers Blocks <a href="../legales.html">Avisos Legales</a></p>
   </footer>
 
+  <script src="../js/menu.js"></script>
+  
 </body>
 
 </html>

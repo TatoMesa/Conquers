@@ -1,0 +1,22 @@
+@use 'variables';
+
+section{
+    padding: 25px;
+    h2{
+        font-size: 2.5rem;
+        padding-bottom: 0.8rem;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px; // grosor de la línea
+        text-underline-offset: 6px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    article{
+        padding-top: 0.8rem;
+        h3{
+            font-size: 2rem;
+        }
+    }
+}

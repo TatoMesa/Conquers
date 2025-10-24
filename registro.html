@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Registro</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <meta name="description" content="Registrate para formar parte de nuestros cursos">
 
   <meta property="og:title" content="">
@@ -28,7 +28,10 @@
     <figure>
       <img src="img/Common/logotipo.avif" alt="Logotipo de Conquer Blocks">
     </figure>
-    <nav>
+    <button class="hamburger" id="hamburger" aria-label="Menú principal">
+      ☰
+    </button>
+    <nav id="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="quienes-somos.html">Quienes Somos</a></li>
@@ -43,48 +46,50 @@
 
   <main>
 
-    <h1>Formulario de Registro</h1>
-
-    <form action="procesar_registro.php" method="post" enctype="multipart/form-data">
+    <section class="form">
+      <h2>Formulario de Registro</h2>
+      <form action="procesar_registro.php" method="post" enctype="multipart/form-data">
     
-      <p>
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
-      </p>
-      
-      <p>
-        <label for="fecha_nac">Fecha de nacimiento:</label>
-        <input type="date" id="fecha_nac" name="fecha_nac" required>
-      </p>
-      
-      <p>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-      </p>
-      
-      <p>
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion">
-      </p>
+        <p>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+        
+        <p>
+          <label for="fecha_nac">Fecha de nacimiento:</label>
+          <input type="date" id="fecha_nac" name="fecha_nac" required>
+        </p>
+        
+        <p>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        
+        <p>
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" name="direccion">
+        </p>
 
-      <p>
-        <label for="web">Página web:</label>
-        <input type="url" id="web" name="web" placeholder="https://">
-      </p>
-      
-      <p>
-        <label for="foto">Fotografía:</label>
-        <input type="file" id="foto" name="foto" accept="image/*">
-      </p>
-      
-      <p>
-        <label for="bio">Biografía:</label>
-        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Escribe aquí tu biografía..."></textarea>
-      </p>
-      
-      <button type="submit">Registrarse</button>
-      <button type="reset">Borrar</button>
-    </form>
+        <p>
+          <label for="web">Página web:</label>
+          <input type="url" id="web" name="web" placeholder="https://">
+        </p>
+        
+        <p>
+          <label for="foto">Fotografía:</label>
+          <input type="file" id="foto" name="foto" accept="image/*">
+        </p>
+        
+        <p>
+          <label for="bio">Biografía:</label>
+          <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Escribe aquí tu biografía..."></textarea>
+        </p>
+        <div class="botones">
+          <button class="submit" type="submit">Registrarse</button>
+          <button class="reset" type="reset">Borrar</button>
+        </div>
+      </form>
+    </section>
 
   </main>
    
@@ -92,6 +97,8 @@
     <p>Conquers Blocks <a href="legales.html">Avisos Legales</a></p>
   </footer>
    
+  <script src="js/menu.js"></script>
+  
 </body>
 
 </html>
