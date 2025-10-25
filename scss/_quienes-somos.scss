@@ -4,9 +4,13 @@ section.quienes-somos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
-
-    @media (max-width: 1024px){
+    margin-bottom: 5px;
+    @media (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 480px){
         grid-template-columns: 1fr;
+        gap: 1%;
     }
 
     article{
@@ -16,14 +20,19 @@ section.quienes-somos{
         border: 2px solid variables.$color-black;
         border-radius: 10px;
         background-color: variables.$color-grey;
+        margin-bottom: 10px;
         h3{
             color: variables.$color-black;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5%;
         }
        
         img{
-            width: 320px;
+            width: 90%;
             border-radius: 50%;
+            margin-left: 5%;
+            margin-right: 5%;
             
         }
         figcaption{
@@ -39,7 +48,7 @@ section.quienes-somos{
             color: variables.$color-black;
             width: 100%;
             font-size: 1.1rem;
-            line-height: 1.2;
+            line-height: 1;
             text-align: center;
             padding: 5px;
         }

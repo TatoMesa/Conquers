@@ -37,11 +37,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   padding: 25px;
+  background-color: #252525;
 }
 header figure {
   margin: 0;
+  padding-top: 11px;
 }
 header figcaption {
   display: none;
@@ -59,7 +61,7 @@ header nav {
   display: flex;
   flex-direction: row;
   padding: 0;
-  width: 50%;
+  width: 70%;
   justify-content: flex-end;
 }
 header nav ul li a {
@@ -81,7 +83,8 @@ header nav ul li a:hover {
 }
 header nav ul {
   display: flex;
-  gap: 40px;
+  gap: 30px;
+  padding-top: 12px;
   list-style: none;
 }
 @media (max-width: 1024px) {
@@ -90,7 +93,7 @@ header nav ul {
     top: 80px;
     right: 0;
     width: 40%;
-    background: #151515;
+    background: #252525;
     justify-content: center;
   }
   header nav ul {
@@ -118,31 +121,58 @@ section.hero-index {
   margin-bottom: 2%;
   background-image: url("https://cdn.prod.website-files.com/63c2c7b1f3d9c51c32335fb0%2F6674586a2cb3b5a535ca555b_VIDEO%20WEB%20BLOCKS%20actualizado-poster-00001.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: 100%;
 }
 section.hero-index div {
   text-align: center;
 }
 section.hero-index div h1 {
-  padding-top: 10%;
+  padding-top: 2%;
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 section.hero-index div h1 span {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: "Poppins", sans-serif;
   color: #151515;
   text-shadow: 0px 0px 30px #D9D9D9;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (max-width: 480px) {
+  section.hero-index div h1 {
+    font-size: 1.5rem;
+  }
+  section.hero-index div h1 span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  section.hero-index div h1 {
+    font-size: 3rem;
+    padding-top: 0px;
+  }
+  section.hero-index div h1 span {
+    font-size: 2.1rem;
+  }
+}
 section.hero-index div p {
   text-align: center;
   padding-bottom: 10%;
   padding-top: 3%;
   font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  section.hero-index div p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  section.hero-index div p {
+    font-size: 1rem;
+  }
 }
 
 section {
@@ -170,10 +200,17 @@ section.quienes-somos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3%;
+  margin-bottom: 5px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  section.quienes-somos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
   section.quienes-somos {
     grid-template-columns: 1fr;
+    gap: 1%;
   }
 }
 section.quienes-somos article {
@@ -183,14 +220,19 @@ section.quienes-somos article {
   border: 2px solid #151515;
   border-radius: 10px;
   background-color: #D9D9D9;
+  margin-bottom: 10px;
 }
 section.quienes-somos article h3 {
   color: #151515;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5%;
 }
 section.quienes-somos article img {
-  width: 320px;
+  width: 90%;
   border-radius: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 section.quienes-somos article figcaption {
   text-align: center;
@@ -205,9 +247,22 @@ section.quienes-somos article p {
   color: #151515;
   width: 100%;
   font-size: 1.1rem;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
   padding: 5px;
+}
+
+section.cursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.cursos p {
+  width: 100%;
+  text-align: left;
+}
+section.cursos img {
+  width: 100%;
 }
 
 section.nota span {
@@ -289,7 +344,11 @@ footer {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #252525;
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
 }
 footer p {
   font-family: "Poppins", sans-serif;

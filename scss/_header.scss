@@ -5,12 +5,14 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
     padding: 25px;
-
+    background-color: variables.$color-dark-dark-grey;
+   
     figure{
         margin: 0;
-    } 
+        padding-top: 11px;
+    }
     figcaption{
         display: none;
     }
@@ -29,7 +31,7 @@ header{
         display: flex;
         flex-direction: row;
         padding: 0;
-        width: 50%;
+        width: 70%;
         justify-content: flex-end;
         
         ul li a{
@@ -53,7 +55,8 @@ header{
         
         ul{
             display: flex;
-            gap:40px;
+            gap:30px;
+            padding-top: 12px;
             list-style: none;
         }
 
@@ -63,7 +66,7 @@ header{
             top: 80px;
             right: 0;
             width: 40%;
-            background: variables.$color-black;
+            background: variables.$color-dark-dark-grey;
             justify-content: center;
 
             ul {
